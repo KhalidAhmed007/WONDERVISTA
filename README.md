@@ -134,7 +134,7 @@ Contributions, issues, and feature requests are welcome.
 **Mohammed Khaleed Ahmed**
 
 * GitHub: https://github.com/KhalidAhmed007
-* LinkedIn: Add your LinkedIn URL here
+* LinkedIn:www.linkedin.com/in/mohammed-khaleed-ahmed-phd
 
 ## 📄 License
 
