@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WanderVista | Explore The World</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= LOADER ================= -->
+    <div id="loader">
+        <div class="loader-content">
+            <i class="fa-solid fa-earth-americas"></i>
+            <h2>WanderVista</h2>
+        </div>
+    </div>
+
+    <!-- ================= BACK TO TOP ================= -->
+    <!-- <button id="backToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button> -->
+
+    <button
+    type="button"
+    id="backToTop"
+    aria-label="Back to top"
+    title="Back to top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+    <!-- ================= LIGHTBOX ================= -->
+    <div class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img src="" alt="Preview">
+    </div>
+
+    <!-- ================= HEADER ================= -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-plane-departure"></i>
+                WanderVista
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- <div class="nav-actions">
+                <button id="themeToggle">
+                    <i class="fa-solid fa-moon"></i>
+                </button> -->
+                <button
+    type="button"
+    id="themeToggle"
+    aria-label="Toggle dark mode"
+    title="Toggle dark mode">
+
+    <i class="fa-solid fa-moon"></i>
+
+</button>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1>Discover Your Next Adventure</h1>
+
+            <p>
+                Explore breathtaking destinations, unforgettable experiences,
+                and premium travel packages crafted for every traveler.
+            </p>
+
+            <a href="#destinations" class="btn-primary">
+                Explore Now
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section class="stats">
+        <div class="stat-card">
+            <h2 class="counter" data-target="120">0</h2>
+            <p>Destinations</p>
+        </div>
+
+        <div class="stat-card">
+            <h2 class="counter" data-target="15000">0</h2>
+            <p>Happy Travelers</p>
+        </div>
+
+        <div class="stat-card">
+            <h2 class="counter" data-target="850">0</h2>
+            <p>Tours Completed</p>
+        </div>
+
+        <div class="stat-card">
+            <h2 class="counter" data-target="25">0</h2>
+            <p>Countries Covered</p>
+        </div>
+    </section>
+
+    <!-- ================= DESTINATIONS ================= -->
+    <section id="destinations" class="destinations section">
+
+        <div class="section-title">
+            <h2>Popular Destinations</h2>
+            <p>Find your dream destination today.</p>
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="destinationSearch"
+                placeholder="Search destination..."
+            >
+        </div>
+
+        <div class="destination-grid">
+
+            <!-- Bali -->
+            <div class="destination-card">
+                <img src="https://cdn.pixabay.com/photo/2017/11/24/21/49/bali-2975787_640.jpg"
+                    alt="Bali">
+
+                <div class="card-content">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Tropical paradise with beaches and temples.</p>
+
+                    <div class="card-info">
+                        <span>⭐ 4.9</span>
+                        <span>From $799</span>
+                    </div>
+
+                    <button class="card-btn">
+                        Explore
+                    </button>
+                </div>
+            </div>
+
+            <!-- Paris -->
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34"
+                    alt="Paris">
+
+                <div class="card-content">
+                    <h3>Paris, France</h3>
+                    <p>Experience romance and iconic landmarks.</p>
+
+                    <div class="card-info">
+                        <span>⭐ 4.8</span>
+                        <span>From $999</span>
+                    </div>
+
+                    <button class="card-btn">
+                        Explore
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dubai -->
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c"
+                    alt="Dubai">
+
+                <div class="card-content">
+                    <h3>Dubai, UAE</h3>
+                    <p>Luxury lifestyle and modern architecture.</p>
+
+                    <div class="card-info">
+                        <span>⭐ 4.7</span>
+                        <span>From $899</span>
+                    </div>
+
+                    <button class="card-btn">
+                        Explore
+                    </button>
+                </div>
+            </div>
+
+            <!-- Santorini -->
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff"
+                    alt="Santorini">
+
+                <div class="card-content">
+                    <h3>Santorini, Greece</h3>
+                    <p>Whitewashed beauty and ocean views.</p>
+
+                    <div class="card-info">
+                        <span>⭐ 4.9</span>
+                        <span>From $1099</span>
+                    </div>
+
+                    <button class="card-btn">
+                        Explore
+                    </button>
+                </div>
+            </div>
+
+            <!-- Maldives -->
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd"
+                    alt="Maldives">
+
+                <div class="card-content">
+                    <h3>Maldives</h3>
+                    <p>Luxury water villas and crystal waters.</p>
+
+                    <div class="card-info">
+                        <span>⭐ 5.0</span>
+                        <span>From $1499</span>
+                    </div>
+
+                    <button class="card-btn">
+                        Explore
+                    </button>
+                </div>
+            </div>
+
+            <!-- Switzerland -->
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+                    alt="Switzerland">
+
+                <div class="card-content">
+                    <h3>Switzerland</h3>
+                    <p>Snowy Alps and breathtaking scenery.</p>
+
+                    <div class="card-info">
+                        <span>⭐ 4.9</span>
+                        <span>From $1299</span>
+                    </div>
+
+                    <button class="card-btn">
+                        Explore
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section id="gallery" class="gallery section">
+
+        <div class="section-title">
+            <h2>Travel Gallery</h2>
+            <p>Capture unforgettable memories.</p>
+        </div>
+
+        <div class="gallery-grid">
+
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="">
+            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d" alt="">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e" alt="">
+            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1" alt="">
+            <img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef" alt="">
+
+        </div>
+    </section>
+
+    <!-- ================= PACKAGES ================= -->
+    <section id="packages" class="packages section">
+
+        <div class="section-title">
+            <h2>Travel Packages</h2>
+            <p>Choose a package that suits your journey.</p>
+        </div>
+
+        <div class="package-grid">
+
+            <div class="package-card">
+                <h3>Bali Escape</h3>
+                <h4>5 Days</h4>
+
+                <ul>
+                    <li>Hotel Included</li>
+                    <li>Airport Transfer</li>
+                    <li>Breakfast</li>
+                </ul>
+
+                <h2>$799</h2>
+
+                <button>Book Now</button>
+            </div>
+
+            <div class="package-card">
+                <h3>European Delight</h3>
+                <h4>10 Days</h4>
+
+                <ul>
+                    <li>Flights Included</li>
+                    <li>Luxury Hotels</li>
+                    <li>Guided Tours</li>
+                </ul>
+
+                <h2>$1999</h2>
+
+                <button>Book Now</button>
+            </div>
+
+            <div class="package-card">
+                <h3>Maldives Honeymoon</h3>
+                <h4>7 Days</h4>
+
+                <ul>
+                    <li>Water Villa</li>
+                    <li>Romantic Dinner</li>
+                    <li>Airport Pickup</li>
+                </ul>
+
+                <h2>$2499</h2>
+
+                <button>Book Now</button>
+            </div>
+
+            <div class="package-card">
+                <h3>Dubai Luxury Tour</h3>
+                <h4>4 Days</h4>
+
+                <ul>
+                    <li>5-Star Hotel</li>
+                    <li>Desert Safari</li>
+                    <li>City Tour</li>
+                </ul>
+
+                <h2>$999</h2>
+
+                <button>Book Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+    <section class="features section">
+
+        <div class="section-title">
+            <h2>Why Choose Us</h2>
+        </div>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <i class="fa-solid fa-tags"></i>
+                <h3>Best Prices</h3>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-user-group"></i>
+                <h3>Expert Guides</h3>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-shield-heart"></i>
+                <h3>Safe Travel</h3>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-headset"></i>
+                <h3>24/7 Support</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section id="testimonials" class="testimonials section">
+
+        <div class="section-title">
+            <h2>What Travelers Say</h2>
+        </div>
+
+        <div class="testimonial-slider">
+
+            <div class="testimonial active">
+                <p>
+                    "Absolutely amazing experience! Everything was perfectly organized."
+                </p>
+                <h4>- Sarah Johnson</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>
+                    "The Bali package exceeded all my expectations."
+                </p>
+                <h4>- David Miller</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>
+                    "Best travel company I have ever booked with."
+                </p>
+                <h4>- Emily Carter</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="contact section">
+
+        <div class="section-title">
+            <h2>Contact Us</h2>
+        </div>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <input
+                type="text"
+                id="destination"
+                placeholder="Destination Interested In"
+                required
+            >
+
+            <textarea
+                id="message"
+                rows="6"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h3>WanderVista</h3>
+                <p>Explore the world with confidence.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © 2026 WanderVista. All Rights Reserved.
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
